@@ -3,7 +3,7 @@ let addSkippedCount = 0;
 
 setInterval(function () {
     // console.log("Working Start")
-    if (skipButton !== undefined &&  skipButton.length > 0) {
+    if (skipButton[0] !== undefined &&  skipButton.length > 0) {
         skipButton[0].click();
         console.log("Add Skipped: "+ ++addSkippedCount);
     }
